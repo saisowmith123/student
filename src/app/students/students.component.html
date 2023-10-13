@@ -1,0 +1,52 @@
+<div>
+  <app-nav-bar></app-nav-bar>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 my-sm-3">
+      <p class="font-weight-bold my-sm-3 text-center text-xl h2 ">My Students</p>
+      <input type="text" placeholder="Search" [(ngModel)]="searchQuery" >
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+          <!-- Student Name Column -->
+          <ng-container matColumnDef="studentName">
+            <th mat-header-cell *matHeaderCellDef>Student Name</th>
+            <td mat-cell *matCellDef="let studentData">
+              {{ studentData.studentName }}
+            </td>
+          </ng-container>
+
+          <!-- Subject Column -->
+          <ng-container matColumnDef="subject">
+            <th mat-header-cell *matHeaderCellDef>Subject</th>
+            <td mat-cell *matCellDef="let studentData">
+              {{ studentData.subject }}
+            </td>
+          </ng-container>
+
+          <!-- Activity Status Column -->
+          <ng-container matColumnDef="activityStatus">
+            <th mat-header-cell *matHeaderCellDef>Current/Previous</th>
+            <td mat-cell *matCellDef="let studentData">
+              {{ studentData.activityStatus }}
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <div class="align-items-center">
+          <mat-paginator
+            [pageSizeOptions]="[5, 10, 20]"
+            showFirstLastButtons
+            aria-label="Select page of Students"
+          >
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

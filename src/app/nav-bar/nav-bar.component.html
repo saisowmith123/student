@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Bootstrap Navigation Bar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-L2Sb4Jzsfvr5BfO5OJpynUGzWvz+M5BzERn2z4Cer5XGv3Szz5pXo+5o2L5F5V5K"
+      crossorigin="anonymous"
+    />
+    <style>
+      .alignment-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .left-div {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 50%;
+        background-color: aliceblue;
+      }
+
+      .right-div {
+        float: left;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="#">Digisite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="icon-container">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Home icon"
+                  fontIcon="home"
+                ></mat-icon>
+
+                <a
+                  class="nav-link"
+                  routerLink="/myClasses"
+                  routerLinkActive="active"
+                >
+                  My Classes</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="icon-container">
+                <mat-icon class="calendar-icon">date_range</mat-icon>
+                <a
+                  class="nav-link"
+                  routerLink="/calender"
+                  routerLinkActive="active"
+                >
+                  Calender</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="icon-container">
+                <mat-icon class="student-icon">school</mat-icon>
+                <a
+                  class="nav-link"
+                  routerLink="/students"
+                  routerLinkActive="active"
+                  >Students</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="icon-container">
+                <mat-icon class="money-icon">attach_money</mat-icon>
+
+                <a
+                  class="nav-link"
+                  routerLink="/myEarnings"
+                  routerLinkActive="active"
+                  >My Earnings</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w7I5d7A8WQUltPdHQV/z3XWuJ5Ff6usIVFQ1T5fbF5PQi5aq3oQq6f2F5F5G5f5f5G5f5G5f5F5Y5f5G5F5C5T5V5K"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

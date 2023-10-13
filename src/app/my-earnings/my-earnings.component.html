@@ -1,0 +1,78 @@
+<div>
+  <app-nav-bar></app-nav-bar>
+</div>
+<div class="background-image">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 my-sm-3"></div>
+    <div class="col-md-5 my-sm-3" [class.move-left]="showContent">
+      <div class="card card-margin">
+        <div class="card-header no-border">
+          <h3 class="card-title">My Earnings</h3>
+        </div>
+        <div class="card-body pt-0">
+          <div class="widget-49">
+            <div class="widget-49-title-wrapper">
+              <div class="widget-49-date-primary">
+                <span class="widget-49-date-month">Apr</span>
+              </div>
+              <div class="widget-49-meeting-info">
+                <span class="widget-49-pro-title"></span>
+                <span class="widget-49-meeting-time">April 2023</span>
+              </div>
+            </div>
+            <div class="earnings-container">
+              <div class="total-earnings">
+                <button
+                  class="total-earnings-button"
+                  role="button"
+                  (click)="toggleDistribution()"
+                >
+                  Taking Home : &#8377;0
+                </button>
+              </div>
+              <div *ngIf="showDistribution" class="total-earnings-distribution">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="total-earnings-deductions">
+                      <p class="earnings">Total Earnings : &#8377;0</p>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md-6">
+                    <div class="total-earnings-deductions">
+                      <p class="earnings">Deductions : &#8377;0</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                    <div class="icon-container">
+                        <mat-icon class="coin-icon">attach_money</mat-icon>
+                        <p class="detailedDistribution">Earnings from Paid Classes</p>
+                    </div>
+                    <hr>
+                  <div class="icon-container">
+                    <mat-icon class="television-icon">tv</mat-icon>
+                    <p class="detailedDistribution">Earnings from Demo Classes</p>
+                </div>
+                <hr>
+                <div  class="icon-container">
+                    <mat-icon class="settings-icon">settings</mat-icon>
+                    <p class="detailedDistribution">Earnings from Incentives</p>
+                </div>
+                <hr>
+                <div  class="icon-container">
+                    <mat-icon class="minus-icon">remove</mat-icon>
+                    <p class="detailedDistribution">Penalities</p>
+                </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

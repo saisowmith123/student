@@ -1,0 +1,20 @@
+.icon-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+mat-icon {
+  margin-right: 0.1rem;
+  color: white; /* Adjust the spacing between the icon and the link */
+}
+
+a {
+  text-decoration: none; /* Remove underlines from the link */
+  color: rgb(245, 240, 240); /* Set your desired text color for the link */
+  margin-right: 1rem;
+}
+
+.active {
+  color: rgb(34, 24, 24) !important;
+  font-weight: 500;
+}
