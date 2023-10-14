@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CalenderComponent } from './calender/calender.component';
-import { LoginComponent } from './login/login.component';
-import { MainComponentComponent } from './main-component/main-component.component';
-import { MyClassesComponent } from './my-classes/my-classes.component';
-import { MyEarningsComponent } from './my-earnings/my-earnings.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { PrimeStudentsComponent } from './prime-students/prime-students.component';
-import { StudentsComponent } from './students/students.component';
+import { CalenderComponent } from './components/calender/calender.component';
+import { LoginComponent } from './components/login/login.component';
+import { MainComponentComponent } from './components/main-component/main-component.component';
+import { MyClassesComponent } from './components/my-classes/my-classes.component';
+import { MyEarningsComponent } from './components/my-earnings/my-earnings.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { PrimeStudentsComponent } from './components/prime-students/prime-students.component';
+import { StudentsComponent } from './components/students/students.component';
 
 
 const routes: Routes = [

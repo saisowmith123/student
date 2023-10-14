@@ -17,7 +17,7 @@ import {
 @Injectable({
     providedIn: 'root'
 })
-export class AppService {
+export class CalendarService {
     getEvents(actions: CalendarSchedulerEventAction[]): Promise<CalendarSchedulerEvent[]> {
         const events = [
             <CalendarSchedulerEvent>{
