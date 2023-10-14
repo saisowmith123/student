@@ -28,7 +28,7 @@ import {
   DateAdapter,
 } from 'angular-calendar';
 
-import { AppService } from '../services/app.service';
+import { CalendarService } from '../../services/calendar.service';
 
 @Component({
   selector: 'app-calender',
@@ -98,7 +98,7 @@ export class CalenderComponent implements OnInit {
 
   constructor(
     @Inject(LOCALE_ID) locale: string,
-    private appService: AppService,
+    private appService: CalendarService,
     private dateAdapter: DateAdapter
   ) {
     this.locale = locale;

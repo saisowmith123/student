@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TeacherClasses } from '../models/teacherClasses';
-import { MyClassesService } from './my-classes.service';
+import { TeacherClasses } from '../../models/teacherClasses';
+import { MyClassesService } from '../../services/my-classes.service';
 
 @Component({
   selector: 'app-my-classes',
   templateUrl: './my-classes.component.html',
   styleUrls: ['./my-classes.component.css'],
-  //imports: [MatCardModule, MatDatepickerModule, MatNativeDateModule],
 })
 export class MyClassesComponent implements OnInit {
   classes: TeacherClasses[] = [];

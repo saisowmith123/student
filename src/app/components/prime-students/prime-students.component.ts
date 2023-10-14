@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Table } from 'primeng/table';
-import { Customer, Representative } from '../models/customer';
-import { CustomerService } from '../services/prime-student.service'
+import { Customer, Representative } from '../../models/customer';
+import { CustomerService } from '../../services/prime-students.service'
 
 @Component({
   selector: 'app-prime-students',
